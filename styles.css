@@ -27,6 +27,7 @@ img {
     height: auto;
 }
 
+/* Header Styles */
 header {
     background-color: #EB5428;
     padding: 20px;
@@ -54,8 +55,14 @@ header h1 {
     transform: scale(1.1);
 }
 
+/* Main Content */
 main {
     padding: 20px;
+}
+
+.recipe-description {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .recipe-description img {
@@ -63,8 +70,42 @@ main {
     margin-bottom: 20px;
 }
 
-.recipe-details, .ingredients, .directions, .side-dishes {
+.recipe-details ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.recipe-details ul li {
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.ingredients, .directions, .side-dishes {
     margin-bottom: 30px;
+}
+
+.ingredients ul, .directions ol {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ingredients ul li, .directions ol li {
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+/* Side Dishes */
+.side-dishes {
+    text-align: center;
 }
 
 .side-dish {
@@ -72,17 +113,29 @@ main {
     width: 22%;
     margin-right: 2%;
     text-align: center;
+    vertical-align: top;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .side-dish img {
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
+.side-dish p {
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
+    margin-top: 30px;
 }
 
 footer nav ul {
@@ -99,6 +152,7 @@ footer nav ul li {
 footer nav ul li a {
     color: white;
     font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
 footer nav ul li a:hover {
