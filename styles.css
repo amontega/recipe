@@ -36,10 +36,6 @@ main {
     padding: 2rem;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
 .recipe-image img {
     max-width: 100%;
     height: auto;
@@ -80,4 +76,48 @@ footer ul {
 footer ul li {
     display: inline;
     margin: 0 1rem;
+}
+
+
+.icon {
+    vertical-align: middle; 
+}
+
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-media-links a {
+    margin: 0 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.details {
+    margin: 1rem 0;
+}
+
+.ingredients, .directions {
+    margin: 1rem 0;
+}
+
+.side-dishes img {
+    max-width: 80%;
+    border-radius: 5px;
 }
